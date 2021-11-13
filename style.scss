@@ -454,6 +454,32 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
   background: #FCA759;
 }
 
+.footer {
+  text-align: center;
+  font-size: 11px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 17px 0;
+  @media (min-width: 375px) {
+    padding: 20px 0 39px;
+    position: relative;
+    &:after {
+      content: "";
+      width: 134px;
+      height: 5px;
+      background-color: #000000;
+      border-radius: 100px;
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  @media (min-width: 414px) {
+
+  }
+}
+
 // dark theme
 
 .dark .services {
