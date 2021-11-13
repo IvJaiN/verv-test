@@ -1,0 +1,36 @@
+// vars
+
+$whiteBgColor: #FFFFFF;
+$whiteColorText: #1A1A1A;
+$whiteBlockColor: #F3F2F9;
+$whiteActiveBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+$whiteBtnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
+
+$darkBgColor: #000000;
+$darkColorText: #FFFFFF;
+$darkBlockColor: #373640;
+$darkActiveBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+$darkBtnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
+
+// null
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &:before,
+  &:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  list-style: none;
+}
+
+// white theme
+
+
+
+// dark theme
+
+
