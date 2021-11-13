@@ -3,15 +3,13 @@
 $whiteBgColor: #FFFFFF;
 $whiteColorText: #1A1A1A;
 $whiteBlockColor: #F3F2F9;
-$whiteActiveBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
-$whiteBtnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
 
 $darkBgColor: #000000;
 $darkColorText: #FFFFFF;
 $darkBlockColor: #373640;
-$darkActiveBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
-$darkBtnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
 
+$btnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
+$activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
 // null
 
 * {
@@ -58,7 +56,7 @@ $darkBtnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
       @media (min-width: 375px) {
         margin-top: 20px;
       }
-      @media (min-width: 416px) {
+      @media (min-width: 414px) {
         margin-top: 33px;
       }
     }
@@ -70,7 +68,7 @@ $darkBtnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
       @media (min-width: 375px) {
         padding: 15px 0 15px 20px;
       }
-      @media (min-width: 416px) {
+      @media (min-width: 414px) {
         padding: 15px 0 15px 33px;
       }
       &:after {
@@ -113,12 +111,12 @@ $darkBtnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
           top: -14%;
           left: 45%;
         }
-        @media (min-width: 416px) {
+        @media (min-width: 414px) {
           display: none;
         }
       }
       &-big {
-        @media (min-width: 416px) {
+        @media (min-width: 414px) {
           display: inline;
           top: -13%;
           left: 44%;
@@ -144,7 +142,7 @@ $darkBtnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
       @media (min-width: 375px) {
         display: block;
       }
-      @media (min-width: 416px) {
+      @media (min-width: 414px) {
         display: none;
       }
       & .message {
@@ -152,10 +150,10 @@ $darkBtnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
       }
     }
     &-big {
-      @media (max-width: 415px) {
+      @media (max-width: 413px) {
         display: none;
       }
-      @media (min-width: 416px) {
+      @media (min-width: 414px) {
         display: block;
       }
 
@@ -220,7 +218,7 @@ $darkBtnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
       top: 16px;
       right: 37px;
     }
-    @media (min-width: 416px) {
+    @media (min-width: 414px) {
       top: 26px;
       right: 18px;
     }
@@ -235,7 +233,7 @@ $darkBtnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
       top: 103px;
       right: 37px;
     }
-    @media (min-width: 416px) {
+    @media (min-width: 414px) {
       top: 125px;
       right: 18px;
     }
@@ -272,8 +270,205 @@ $darkBtnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
 }
 // white theme
 
+.services {
+  padding-top: 81px;
+  @media (min-width: 375px) {
+    padding-top: 118px;
+  }
+  @media (min-width: 414px) {
+    padding-top: 121px;
+  }
 
+  &-container {
+    max-width: 280px;
+    margin: 0 auto;
+    @media (min-width: 375px) {
+      max-width: 335px;
+    }
+    @media (min-width: 414px) {
+      max-width: 374px;
+    }
+  }
+
+  &-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 11px 0;
+    background: $btnColor;
+    border-radius: 5px;
+    font-size: 22px;
+    line-height: 28px;
+    color: #fff;
+    border: none;
+    margin-top: 13px;
+    text-decoration: none;
+    @media (min-width: 375px) {
+      margin-top: 21px;
+    }
+    @media (min-width: 414px) {
+      margin-top: 29px;
+    }
+  }
+
+  &-prices {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &-price + .services-price {
+    margin-left: 8px;
+    @media (min-width: 375px) {
+      margin-left: 10px;
+    }
+  }
+
+  &-price {
+    width: 88px;
+    height: 112px;
+    text-align: center;
+    background-color: $whiteBlockColor;
+    backdrop-filter: blur(9.06094px);
+    padding: 6px 0 34px;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.354546px;
+    position: relative;
+    cursor: pointer;
+    @media (min-width: 375px) {
+      width: 105px;
+      height: 131px;
+    }
+    @media (min-width: 414px) {
+      width: 118px;
+      height: 151px;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0;
+      font-weight: 700;
+      @media (min-width: 375px) {
+        font-size: 24px;
+        line-height: 28px;
+      }
+      @media (min-width: 414px) {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+    &__date {
+      font-size: 11px;
+      line-height: 13px;
+      padding: 5px 0 3px;
+      @media (min-width: 375px) {
+        font-size: 13px;
+        line-height: 16px;
+        padding: 7px 0 6px;
+      }
+      @media (min-width: 414px) {
+        padding: 12px 0 6px;
+      }
+    }
+    &__month {
+      font-size: 10px;
+      line-height: 12px;
+      @media (min-width: 375px) {
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+
+    &__sale {
+      height: 15px;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background-color: #FCA759;
+      font-size: 7px;
+      line-height: 15px;
+      font-weight: 700;
+      letter-spacing: 0.54px;
+      text-transform: uppercase;
+      margin-top: auto;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-radius: 0 0 5px 5px;
+      @media (min-width: 375px) {
+        font-size: 9px;
+      }
+    }
+    &._save-80,
+    &._save-90 {
+      border-radius: 0 0 5px 5px;
+    }
+    &._save-80 .save_80 {
+      display: block;
+    }
+    &._save-90 .save_90 {
+      display: block;
+    }
+  }
+
+  & ._active {
+    background: $activeBlockColor;
+    backdrop-filter: blur(9.06094px);
+    color: #fff;
+  }
+
+  & ._sale {
+    display: block;
+  }
+}
+.save_80, .save_90 {
+  position: absolute;
+  top: -22%;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.78px;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0 0;
+  backdrop-filter: blur(9.06094px);
+  display: none;
+  @media (min-width: 375px) {
+    font-size: 13px;
+    top: -19%;
+  }
+  @media (min-width: 414px) {
+    top: -15%;
+  }
+}
+.save_80 {
+  background: #FCBF59;
+}
+.save_90 {
+  background: #FCA759;
+}
 
 // dark theme
 
+.dark .services {
+  background-color: $darkBgColor;
+  &-price {
+    background-color: $darkBlockColor;
+    &__title {
+      color: $darkColorText;
+    }
+    &__date {
+      color: $darkColorText;
+    }
+    &__month {
+      color: $darkColorText;
+    }
+  }
+}
 
