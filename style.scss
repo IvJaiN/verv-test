@@ -19,12 +19,14 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'SFPro';
   src: url("fonts/SFPro-Semibold.woff") format('woff');
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'SFPro';
   src: url("fonts/SFPro-Bold.woff") format('woff');
@@ -38,45 +40,52 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   &:before,
   &:after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
   list-style: none;
 }
 
 .wrapper {
-  font-family: 'SFPro';
+  font-family: 'SFPro', -apple-system, BlinkMacSystemFont, sans-serif;
   position: relative;
 }
 
 // header
 
 .header {
-  padding: 50px 0 90px;
+  padding: 47px 0 70px;
   background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
   color: #fff;
   @media (min-width: 375px) {
     padding: 80px 0 100px;
   }
   @media (min-width: 414px) {
-    padding: 80px 0 135px;
+    padding: 80px 0 119px;
   }
+
   &__title {
     font-size: 24px;
     font-weight: 700;
     line-height: 41px;
+    padding-left: 19px;
     text-align: center;
     letter-spacing: 0.261176px;
     @media (min-width: 375px) {
+      padding-left: 0;
       font-size: 34px;
       letter-spacing: 0.37px;
     }
   }
+
   &-content {
     position: relative;
+
     &__list {
       @media (min-width: 375px) {
         margin-top: 20px;
@@ -85,18 +94,21 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
         margin-top: 33px;
       }
     }
+
     &__item {
-      padding: 5px 0 5px 20px;
+      padding: 6px 0 6px 20px;
       font-size: 12px;
       font-weight: 600;
+      letter-spacing: 0.6px;
       line-height: 14px;
       position: relative;
       @media (min-width: 375px) {
-        padding: 15px 0 15px 20px;
+        padding: 16px 0 15px 20px;
       }
       @media (min-width: 414px) {
-        padding: 15px 0 15px 33px;
+        padding: 16px 0 19px 33px;
       }
+
       &:after {
         content: '';
         width: 100%;
@@ -107,6 +119,7 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
         left: 0;
         opacity: 0.76;
       }
+
       &:last-child:before {
         content: '';
         width: 100%;
@@ -118,38 +131,43 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
         opacity: 0.76;
       }
     }
+
     &__image {
       display: none;
       position: absolute;
-      top: -18%;
-      left: 48%;
+      top: -27%;
+      left: 49%;
       z-index: 15;
       filter: drop-shadow(10px 0px 20px rgba(0, 0, 0, 0.2));
+
       &-small {
         display: inline;
         @media (min-width: 375px) {
           display: none;
         }
       }
+
       &-med {
         @media (min-width: 375px) {
           display: inline;
-          top: -14%;
-          left: 45%;
+          top: -20%;
+          left: 43%;
         }
         @media (min-width: 414px) {
           display: none;
         }
       }
+
       &-big {
         @media (min-width: 414px) {
           display: inline;
-          top: -13%;
-          left: 44%;
+          top: -23%;
+          left: 43%;
         }
       }
     }
   }
+
   &-lines {
     &-small {
 
@@ -157,10 +175,12 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
       @media (min-width: 375px) {
         display: none;
       }
+
       & .message {
         animation-delay: 1.5s;
       }
     }
+
     &-med {
       @media (max-width: 374px) {
         display: none;
@@ -171,10 +191,12 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
       @media (min-width: 414px) {
         display: none;
       }
+
       & .message {
         animation-delay: 1.8s;
       }
     }
+
     &-big {
       @media (max-width: 413px) {
         display: none;
@@ -184,11 +206,16 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
       }
 
     }
+
     &_up {
       position: absolute;
       top: 0;
       left: 0;
+      @media (min-width: 414px) {
+        top: -3px;
+      }
     }
+
     &_down {
       position: absolute;
       top: 2px;
@@ -196,8 +223,12 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
       @media (min-width: 375px) {
         top: 0;
       }
+      @media (min-width: 414px) {
+        top: -4px;
+      }
     }
   }
+
   &-btn {
     background-color: transparent;
     outline: none;
@@ -208,10 +239,12 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     opacity: 0;
     transform: translateX(-300%);
     transition: all 0.3s;
+
     &._active {
       opacity: 1;
       transform: translateX(0);
     }
+
     & svg {
       width: 20px;
       height: auto;
@@ -219,15 +252,24 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
       opacity: 0.7;
     }
   }
+
   &-close {
     background-color: transparent;
     outline: none;
     border: none;
     position: absolute;
-    top: 48px;
-    right: 12px;
+    top: 30px;
+    right: 11px;
+    @media (min-width: 375px) {
+      top: 47px;
+      right: 13px;
+    }
+    @media (min-width: 414px) {
+
+    }
   }
 }
+
 .message {
   opacity: 0;
   display: flex;
@@ -245,6 +287,7 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
   animation-duration: 0.3s;
   animation-delay: 2.1s;
   animation-fill-mode: forwards;
+
   &::after {
     content: "";
     width: 14px;
@@ -253,10 +296,11 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     background-color: black;
     border: 3px solid #fff;
     position: absolute;
-    top: 38px;
+    top: 32px;
     left: 50%;
     transform: translateX(-50%);
   }
+
   &::before {
     content: "";
     border: 5px solid transparent;
@@ -266,36 +310,41 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     left: 50%;
     transform: translateX(-50%);
   }
+
   &-up {
-    top: -7px;
-    right: 20px;
+    top: -2px;
+    right: 19px;
     @media (min-width: 375px) {
-      top: 16px;
-      right: 37px;
+      top: 21px;
+      right: 29px;
     }
     @media (min-width: 414px) {
-      top: 24px;
-      right: 18px;
+      top: 26px;
+      right: 11px;
     }
-    &::after{
+
+    &::after {
       background-color: #EE304E;
     }
   }
+
   &-down {
-    top: 47px;
-    right: 20px;
+    top: 51px;
+    right: 19px;
     @media (min-width: 375px) {
-      top: 103px;
-      right: 37px;
+      top: 110px;
+      right: 29px;
     }
     @media (min-width: 414px) {
-      top: 120px;
-      right: 18px;
+      top: 125px;
+      right: 11px;
     }
-    &::after{
+
+    &::after {
       background-color: #04CD00;
     }
   }
+
   &__text {
 
   }
@@ -307,16 +356,19 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
   stroke-dashoffset: 1000;
   animation: dash 5.5s linear forwards;
 }
+
 #header-images__down {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 5s linear forwards;
 }
+
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
   }
 }
+
 @keyframes inv {
   0% {
     opacity: 0;
@@ -331,7 +383,7 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
 .services {
   padding-top: 81px;
   @media (min-width: 375px) {
-    padding-top: 118px;
+    padding-top: 114px;
   }
   @media (min-width: 414px) {
     padding-top: 121px;
@@ -358,6 +410,7 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     font-size: 22px;
     font-weight: 600;
     line-height: 28px;
+    letter-spacing: 0.8px;
     color: #fff;
     border: none;
     margin-top: 13px;
@@ -389,7 +442,7 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     text-align: center;
     background-color: $whiteBlockColor;
     backdrop-filter: blur(9.06094px);
-    padding: 6px 0 34px;
+    padding: 9px 0 34px;
     border-radius: 5px;
     font-size: 13px;
     line-height: 16px;
@@ -404,19 +457,36 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
       width: 118px;
       height: 151px;
     }
+
     &__title {
-      font-size: 20px;
-      line-height: 19px;
+      line-height: 15px;
+      font-size: 13px;
       font-weight: 700;
+      letter-spacing: 0.8px;
+
+      & span {
+        font-size: 20px;
+        line-height: 19px;
+        @media (min-width: 375px) {
+          font-size: 24px;
+          line-height: 20px;
+        }
+      }
+
       @media (min-width: 375px) {
-        font-size: 24px;
-        line-height: 20px;
+        font-size: 15px;
+        line-height: 17px;
+      }
+      @media (min-width: 375px) {
+        line-height: 18px;
       }
     }
+
     &__date {
       font-size: 11px;
       line-height: 13px;
       padding: 5px 0 3px;
+
       @media (min-width: 375px) {
         font-size: 13px;
         line-height: 16px;
@@ -424,14 +494,19 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
       }
       @media (min-width: 414px) {
         padding: 12px 0 6px;
+        letter-spacing: 0.3px;
       }
     }
+
     &__month {
       font-size: 10px;
       line-height: 12px;
       @media (min-width: 375px) {
         font-size: 13px;
         line-height: 16px;
+      }
+      @media (min-width: 414px) {
+        letter-spacing: 0.3px;
       }
     }
 
@@ -456,13 +531,16 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
         font-size: 9px;
       }
     }
+
     &._save-80,
     &._save-90 {
       border-radius: 0 0 5px 5px;
     }
+
     &._save-80 .save_80 {
       display: block;
     }
+
     &._save-90 .save_90 {
       display: block;
     }
@@ -478,12 +556,13 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     display: block;
   }
 }
+
 .save_80, .save_90 {
   position: absolute;
-  top: -22%;
+  top: -17%;
   left: 0;
   width: 100%;
-  padding: 5px 0;
+  padding: 3px 0;
   font-size: 11px;
   line-height: 15px;
   font-weight: 700;
@@ -495,15 +574,19 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
   display: none;
   @media (min-width: 375px) {
     font-size: 13px;
-    top: -19%;
+    top: -16%;
   }
   @media (min-width: 414px) {
-    top: -15%;
+    font-size: 14px;
+    top: -16.5%;
+    padding: 5px 0;
   }
 }
+
 .save_80 {
   background: #FCBF59;
 }
+
 .save_90 {
   background: #FCA759;
 }
@@ -517,6 +600,7 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
   line-height: 15px;
   color: rgba(0, 0, 0, 0.4);
   padding: 17px 0;
+  letter-spacing: 0.8px;
   @media (min-width: 375px) {
     padding: 20px 0 39px;
     position: relative;
@@ -539,35 +623,38 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
 .slider {
   position: absolute;
   z-index: 50;
-  top: 37%;
+  top: 35.5%;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   overflow: hidden;
   @media (min-width: 375px) {
-    top: 43.5%;
+    top: 42.5%;
   }
   @media (min-width: 414px) {
-    top: 46%;
+    top: 43.5%;
   }
+
   &-inner {
-    transform: translateX(7%);
+    transform: translateX(8.5%);
     @media (min-width: 375px) {
-      transform: translateX(6%);
+      transform: translateX(7%);
     }
     @media (min-width: 414px) {
-      transform: translateX(4%);
+      transform: translateX(6.5%);
     }
   }
+
   &-track {
     transition: 0.5s;
     display: flex;
 
   }
+
   &-item {
     flex: 0 0 280px;
     height: 110px;
-    padding: 15px;
+    padding: 15px 15px 15px 15px;
     margin: 0 2.5px;
     display: flex;
     flex-direction: column;
@@ -582,40 +669,51 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     @media (min-width: 414px) {
       flex: 0 0 374px;
     }
+
     &__header {
       display: flex;
       justify-content: space-between;
-      font-size: 15px;
-      font-weight: 700;
+      font-size: 14px;
+      font-weight: 600;
       line-height: 18px;
       color: #1a1a1a;
+
       &-person {
         opacity: 0.5;
         font-weight: 400;
+        letter-spacing: 0.8px;
       }
     }
+
     &__rating {
-      padding: 7px 0 9px;
+      padding: 7px 0 6px;
+
       & img {
         max-width: 96px;
         @media (min-width: 375px) {
           max-width: 121px;
         }
       }
+
       @media (min-width: 375px) {
         padding: 10px 0 8px;
       }
       @media (min-width: 414px) {
-        padding: 10px 0 16px;
+        padding: 10px 0 13px;
       }
     }
+
     &__text {
       font-size: 13px;
       line-height: 16px;
+      letter-spacing: 0.8px;
       @media (min-width: 375px) {
         font-size: 15px;
         line-height: 18px;
+        padding-bottom: 5px;
+        letter-spacing: 1px;
       }
+
       & span:before {
         content: "\1F4AF";
 
@@ -628,14 +726,18 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
 
 .dark .services {
   background-color: $darkBgColor;
+
   &-price {
     background-color: $darkBlockColor;
+
     &__title {
       color: $darkColorText;
     }
+
     &__date {
       color: $darkColorText;
     }
+
     &__month {
       color: $darkColorText;
     }
@@ -650,12 +752,15 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
 .dark .slider {
   &-item {
     background: linear-gradient(225deg, #262526 0%, #19181A 100%);;
+
     &__header {
       color: $darkColorText;
+
       &-person {
         color: $darkColorText;
       }
     }
+
     &__text {
       color: $darkColorText;
     }

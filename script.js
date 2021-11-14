@@ -40,15 +40,19 @@ document.addEventListener('DOMContentLoaded', () => {
             clearInterval(interval)
         }
     }
+
     function swipeLeft(width = currentWidth) {
         sliderTrack.style.transition = '0.5s'
         currentSlide--
         sliderTrack.style.transform = `translateX(-${(currentWidth + 7.5) * currentSlide}px)`
     }
+
     let interval = null
+
     function autoPlay() {
         interval = setInterval(swipeRight, 5000)
     }
+
     autoPlay()
 
     //  swipe
