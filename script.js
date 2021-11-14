@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    //  cards
+
     const linkBtn = document.querySelector('.services-btn')
     const cardsParent = document.querySelector('.services-prices')
     const cards = document.querySelectorAll('.services-price')
@@ -20,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-//    slider
+    //  slider
 
     const slider = document.querySelector('.slider')
     const slides = document.querySelectorAll('.slider-item')
@@ -30,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSlide = 0
 
 
-    // sliderTrack.style.transform = `translateX(-${(currentWidth + 9) * (slides.length - 1) }px)`
     function swipeRight(width = currentWidth) {
         sliderTrack.style.transition = '0.5s'
         currentSlide++
@@ -46,11 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     let interval = null
     function autoPlay() {
-        interval = setInterval(swipeRight, 1000)
+        interval = setInterval(swipeRight, 5000)
     }
     autoPlay()
 
-    // swipe
+    //  swipe
 
     let startX = null
     let currentX = null
@@ -69,6 +70,23 @@ document.addEventListener('DOMContentLoaded', () => {
             swipeRight()
         } else if (resultX < 0 && currentSlide) {
             swipeLeft()
+        }
+    })
+
+
+    //  dark theme
+
+    const buttonsPar = document.querySelector('.header-buttons')
+    const buttons = document.querySelectorAll('.header-btn')
+    const moonBtn = document.querySelector('#header-btn__moon')
+    const body = document.querySelector('body')
+
+    buttonsPar.addEventListener('click', e => {
+        buttons.forEach(btn => {
+            btn.classList.toggle('_active')
+        })
+        if (e.target !== moonBtn || e.target.parentNode !== moonBtn) {
+            body.classList.toggle('dark')
         }
     })
 })
