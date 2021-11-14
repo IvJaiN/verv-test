@@ -11,6 +11,27 @@ $darkBlockColor: #373640;
 $btnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
 $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
 
+// fonts
+
+@font-face {
+  font-family: 'SFPro';
+  src: url("fonts/SFPro-Regular.woff") format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFPro';
+  src: url("fonts/SFPro-Semibold.woff") format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFPro';
+  src: url("fonts/SFPro-Bold.woff") format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 // null
 
 * {
@@ -27,7 +48,7 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
 }
 
 .wrapper {
-
+  font-family: 'SFPro';
   position: relative;
 }
 
@@ -45,6 +66,7 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
   }
   &__title {
     font-size: 24px;
+    font-weight: 700;
     line-height: 41px;
     text-align: center;
     letter-spacing: 0.261176px;
@@ -66,6 +88,7 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     &__item {
       padding: 5px 0 5px 20px;
       font-size: 12px;
+      font-weight: 600;
       line-height: 14px;
       position: relative;
       @media (min-width: 375px) {
@@ -333,6 +356,7 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     background: $btnColor;
     border-radius: 5px;
     font-size: 22px;
+    font-weight: 600;
     line-height: 28px;
     color: #fff;
     border: none;
@@ -383,7 +407,7 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     &__title {
       font-size: 20px;
       line-height: 19px;
-      font-weight: 400;
+      font-weight: 700;
       @media (min-width: 375px) {
         font-size: 24px;
         line-height: 20px;
@@ -562,10 +586,12 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
       display: flex;
       justify-content: space-between;
       font-size: 15px;
+      font-weight: 700;
       line-height: 18px;
       color: #1a1a1a;
       &-person {
         opacity: 0.5;
+        font-weight: 400;
       }
     }
     &__rating {
