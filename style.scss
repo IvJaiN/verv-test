@@ -10,6 +10,7 @@ $darkBlockColor: #373640;
 
 $btnColor: linear-gradient(225deg, #542285 0%, #222266 100%);
 $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+
 // null
 
 * {
@@ -26,19 +27,21 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
 }
 
 .wrapper {
-  overflow: hidden;
   width: 100vw;
-  min-height: 100vh;
+  position: relative;
 }
 
 // header
 
 .header {
-  padding: 50px 0;
+  padding: 50px 0 90px;
   background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
   color: #fff;
   @media (min-width: 375px) {
-    padding: 80px 0;
+    padding: 80px 0 100px;
+  }
+  @media (min-width: 414px) {
+    padding: 80px 0 135px;
   }
   &__title {
     font-size: 24px;
@@ -219,7 +222,7 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
       right: 37px;
     }
     @media (min-width: 414px) {
-      top: 26px;
+      top: 24px;
       right: 18px;
     }
     &::after{
@@ -234,7 +237,7 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
       right: 37px;
     }
     @media (min-width: 414px) {
-      top: 125px;
+      top: 120px;
       right: 18px;
     }
     &::after{
@@ -245,6 +248,8 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
 
   }
 }
+
+// animation
 #header-images__up {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -268,7 +273,8 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     opacity: 1;
   }
 }
-// white theme
+
+// services
 
 .services {
   padding-top: 81px;
@@ -347,16 +353,11 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     }
     &__title {
       font-size: 20px;
-      line-height: 23px;
-      letter-spacing: 0;
-      font-weight: 700;
+      line-height: 19px;
+      font-weight: 400;
       @media (min-width: 375px) {
         font-size: 24px;
-        line-height: 28px;
-      }
-      @media (min-width: 414px) {
-        font-size: 24px;
-        line-height: 28px;
+        line-height: 20px;
       }
     }
     &__date {
@@ -454,7 +455,10 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
   background: #FCA759;
 }
 
+// footer
+
 .footer {
+  background-color: $whiteBgColor;
   text-align: center;
   font-size: 11px;
   line-height: 15px;
@@ -475,8 +479,93 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
       transform: translateX(-50%);
     }
   }
-  @media (min-width: 414px) {
+}
 
+// slider
+
+.slider {
+  position: absolute;
+  z-index: 50;
+  top: 37%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  overflow: hidden;
+  @media (min-width: 375px) {
+    top: 43.5%;
+  }
+  @media (min-width: 414px) {
+    top: 46%;
+  }
+  &-inner {
+    transform: translateX(7%);
+    @media (min-width: 375px) {
+      transform: translateX(6%);
+    }
+    @media (min-width: 414px) {
+      transform: translateX(4%);
+    }
+  }
+  &-track {
+    transition: 0.5s;
+    display: flex;
+
+  }
+  &-item {
+    flex: 0 0 280px;
+    height: 110px;
+    padding: 15px;
+    margin: 0 2.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F3F2F9;
+    border-radius: 10px;
+    @media (min-width: 375px) {
+      flex: 0 0 335px;
+      height: 145px;
+      padding: 20px;
+    }
+    @media (min-width: 414px) {
+      flex: 0 0 374px;
+    }
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      line-height: 18px;
+      color: #1a1a1a;
+      &-person {
+        opacity: 0.5;
+      }
+    }
+    &__rating {
+      padding: 7px 0 9px;
+      & img {
+        max-width: 96px;
+        @media (min-width: 375px) {
+          max-width: 121px;
+        }
+      }
+      @media (min-width: 375px) {
+        padding: 10px 0 8px;
+      }
+      @media (min-width: 414px) {
+        padding: 10px 0 16px;
+      }
+    }
+    &__text {
+      font-size: 13px;
+      line-height: 16px;
+      @media (min-width: 375px) {
+        font-size: 15px;
+        line-height: 18px;
+      }
+      & span:before {
+        content: "\1F4AF";
+
+      }
+    }
   }
 }
 
@@ -498,3 +587,22 @@ $activeBlockColor: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
   }
 }
 
+.dark .footer {
+  background-color: $darkBgColor;
+  color: #7D7D80;
+}
+
+.dark .slider {
+  &-item {
+    background: linear-gradient(225deg, #262526 0%, #19181A 100%);;
+    &__header {
+      color: $darkColorText;
+      &-person {
+        color: $darkColorText;
+      }
+    }
+    &__text {
+      color: $darkColorText;
+    }
+  }
+}

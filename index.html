@@ -8,139 +8,200 @@
     <link rel="stylesheet" href="style.scss">
     <title>Test for Verv</title>
 </head>
-<body>
-<div class="wrapper">
-    <header class="header">
-        <h1 class="header__title">Try Verv for free</h1>
-        <div class="header-content">
-            <ul class="header-content__list">
-                <li class="header-content__item">Extr. Obese</li>
-                <li class="header-content__item">Obese</li>
-                <li class="header-content__item">Overweight</li>
-                <li class="header-content__item">Healthy</li>
-            </ul>
-            <img class="header-content__image header-content__image-small" src="images/woman_small.png" alt="">
-            <img class="header-content__image header-content__image-med" src="images/woman_med.png" alt="">
-            <img class="header-content__image header-content__image-big" src="images/woman.png" alt="">
-            <div class="header-lines header-lines-small">
-                <svg class="header-lines_up" width="320" height="46" viewBox="0 0 320 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="header-images__up" opacity="0.951181" d="M0 2.20214C0 2.20214 56.2997 1.00908 92.052 6.85769C127.804 12.7063 141.35 19.7155 183.52 25.5641C231.239 30.7629 286.694 44 325 44" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <svg class="header-lines_down" width="320" height="104" viewBox="0 0 320 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="header-images__down" d="M0 2.04272C0 2.04272 83.3999 1.40196 107.203 10.3725C131.007 19.343 132.162 30.5455 165.437 39.0303C198.712 47.5152 211.224 71.0984 241.829 83.2727C261.784 91.2108 267.552 87.73 288.18 94.9474C299.188 98.799 312.138 102 329 102" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="message message-up">
-                    <p class="message__text">Free</p>
-                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path id="header-images__up" fill-rule="evenodd" clip-rule="evenodd" d="M5.88309 11.4697C5.49256 11.8602 4.8594 11.8602 4.46887 11.4697L1.2929 8.29369C0.669463 7.67025 1.09928 6.60371 1.98079 6.58677L3.1975 6.56338V1C3.1975 0.44772 3.64522 4.76837e-06 4.1975 4.76837e-06H6.31533C6.86762 4.76837e-06 7.31533 0.447719 7.31533 1V6.48424L8.45721 6.4623C9.35725 6.445 9.82007 7.53268 9.18354 8.16922L5.88309 11.4697Z" fill="#EE304E"/>
-                    </svg>
-                </div>
-                <div class="message message-down">
-                    <p class="message__text">PRO</p>
-                    <svg width="10" height="12" viewBox="0 0 10 12" fill="04CD00" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88309 11.4697C5.49256 11.8602 4.8594 11.8602 4.46887 11.4697L1.2929 8.29369C0.669463 7.67025 1.09928 6.60371 1.98079 6.58677L3.1975 6.56338V1C3.1975 0.44772 3.64522 4.76837e-06 4.1975 4.76837e-06H6.31533C6.86762 4.76837e-06 7.31533 0.447719 7.31533 1V6.48424L8.45721 6.4623C9.35725 6.445 9.82007 7.53268 9.18354 8.16922L5.88309 11.4697Z" fill="#04CD00"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="header-lines header-lines-med">
-                <svg class="header-lines_up" width="375" height="73" viewBox="0 0 375 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="header-images__up" opacity="0.951181" d="M-13 1.00649C-13 1.00649 54.7328 -0.948562 97.7457 8.63546C140.758 18.2195 157.055 29.7054 207.789 39.2894C265.199 47.8085 331.915 69.5 378 69.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <svg class="header-lines_down" width="375" height="169" viewBox="0 0 375 169" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="header-images__down" d="M-13 1.97048C-13 1.97048 87.384 0.913243 116.035 15.7146C144.686 30.516 146.077 49 186.128 63C226.179 77 241.24 115.912 278.077 136C302.096 149.098 309.038 143.355 333.867 155.263C347.117 161.618 362.705 166.9 383 166.9" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+<body class="dark">
+    <div class="wrapper">
 
-                <div class="message message-up">
-                    <p class="message__text">Free</p>
-                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88309 11.4697C5.49256 11.8602 4.8594 11.8602 4.46887 11.4697L1.2929 8.29369C0.669463 7.67025 1.09928 6.60371 1.98079 6.58677L3.1975 6.56338V1C3.1975 0.44772 3.64522 4.76837e-06 4.1975 4.76837e-06H6.31533C6.86762 4.76837e-06 7.31533 0.447719 7.31533 1V6.48424L8.45721 6.4623C9.35725 6.445 9.82007 7.53268 9.18354 8.16922L5.88309 11.4697Z" fill="#EE304E"/>
+        <header class="header">
+            <h1 class="header__title">Try Verv for free</h1>
+            <div class="header-content">
+                <ul class="header-content__list">
+                    <li class="header-content__item">Extr. Obese</li>
+                    <li class="header-content__item">Obese</li>
+                    <li class="header-content__item">Overweight</li>
+                    <li class="header-content__item">Healthy</li>
+                </ul>
+                <img class="header-content__image header-content__image-small" src="images/woman_small.png" alt="">
+                <img class="header-content__image header-content__image-med" src="images/woman_med.png" alt="">
+                <img class="header-content__image header-content__image-big" src="images/woman.png" alt="">
+                <div class="header-lines header-lines-small">
+                    <svg class="header-lines_up" width="320" height="46" viewBox="0 0 320 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="header-images__up" opacity="0.951181" d="M0 2.20214C0 2.20214 56.2997 1.00908 92.052 6.85769C127.804 12.7063 141.35 19.7155 183.52 25.5641C231.239 30.7629 286.694 44 325 44" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                </div>
-                <div class="message message-down">
-                    <p class="message__text">PRO</p>
-                    <svg width="10" height="12" viewBox="0 0 10 12" fill="04CD00" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88309 11.4697C5.49256 11.8602 4.8594 11.8602 4.46887 11.4697L1.2929 8.29369C0.669463 7.67025 1.09928 6.60371 1.98079 6.58677L3.1975 6.56338V1C3.1975 0.44772 3.64522 4.76837e-06 4.1975 4.76837e-06H6.31533C6.86762 4.76837e-06 7.31533 0.447719 7.31533 1V6.48424L8.45721 6.4623C9.35725 6.445 9.82007 7.53268 9.18354 8.16922L5.88309 11.4697Z" fill="#04CD00"/>
+                    <svg class="header-lines_down" width="320" height="104" viewBox="0 0 320 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="header-images__down" d="M0 2.04272C0 2.04272 83.3999 1.40196 107.203 10.3725C131.007 19.343 132.162 30.5455 165.437 39.0303C198.712 47.5152 211.224 71.0984 241.829 83.2727C261.784 91.2108 267.552 87.73 288.18 94.9474C299.188 98.799 312.138 102 329 102" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
+                    <div class="message message-up">
+                        <p class="message__text">Free</p>
+                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="header-images__up" fill-rule="evenodd" clip-rule="evenodd" d="M5.88309 11.4697C5.49256 11.8602 4.8594 11.8602 4.46887 11.4697L1.2929 8.29369C0.669463 7.67025 1.09928 6.60371 1.98079 6.58677L3.1975 6.56338V1C3.1975 0.44772 3.64522 4.76837e-06 4.1975 4.76837e-06H6.31533C6.86762 4.76837e-06 7.31533 0.447719 7.31533 1V6.48424L8.45721 6.4623C9.35725 6.445 9.82007 7.53268 9.18354 8.16922L5.88309 11.4697Z" fill="#EE304E"/>
+                        </svg>
+                    </div>
+                    <div class="message message-down">
+                        <p class="message__text">PRO</p>
+                        <svg width="10" height="12" viewBox="0 0 10 12" fill="04CD00" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88309 11.4697C5.49256 11.8602 4.8594 11.8602 4.46887 11.4697L1.2929 8.29369C0.669463 7.67025 1.09928 6.60371 1.98079 6.58677L3.1975 6.56338V1C3.1975 0.44772 3.64522 4.76837e-06 4.1975 4.76837e-06H6.31533C6.86762 4.76837e-06 7.31533 0.447719 7.31533 1V6.48424L8.45721 6.4623C9.35725 6.445 9.82007 7.53268 9.18354 8.16922L5.88309 11.4697Z" fill="#04CD00"/>
+                        </svg>
+                    </div>
                 </div>
-            </div>
-            <div class="header-lines header-lines-big">
-                <svg class="header-lines_up" width="414" height="76" viewBox="0 0 414 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="header-images__up" opacity="0.951181" d="M0 1.19849C0 1.19849 71.7171 -0.870109 117.26 9.27057C162.803 19.4112 180.059 31.5642 233.777 41.7049C294.563 50.7188 365.204 73.6702 414 73.6702" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <svg class="header-lines_down" width="414" height="179" viewBox="0 0 414 179" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="header-images__down" d="M0 2.21848C0 2.21848 106.214 1.09983 136.53 16.7609C166.845 32.4219 168.316 51.9795 210.694 66.7926C253.071 81.6058 269.006 122.778 307.983 144.033C333.397 157.891 340.742 151.814 367.013 164.414C381.033 171.139 397.526 176.727 419 176.727" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <div class="header-lines header-lines-med">
+                    <svg class="header-lines_up" width="375" height="73" viewBox="0 0 375 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="header-images__up" opacity="0.951181" d="M-13 1.00649C-13 1.00649 54.7328 -0.948562 97.7457 8.63546C140.758 18.2195 157.055 29.7054 207.789 39.2894C265.199 47.8085 331.915 69.5 378 69.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="header-lines_down" width="375" height="169" viewBox="0 0 375 169" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="header-images__down" d="M-13 1.97048C-13 1.97048 87.384 0.913243 116.035 15.7146C144.686 30.516 146.077 49 186.128 63C226.179 77 241.24 115.912 278.077 136C302.096 149.098 309.038 143.355 333.867 155.263C347.117 161.618 362.705 166.9 383 166.9" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
 
-                <div class="message message-up">
-                    <p class="message__text">Free</p>
-                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88309 11.4697C5.49256 11.8602 4.8594 11.8602 4.46887 11.4697L1.2929 8.29369C0.669463 7.67025 1.09928 6.60371 1.98079 6.58677L3.1975 6.56338V1C3.1975 0.44772 3.64522 4.76837e-06 4.1975 4.76837e-06H6.31533C6.86762 4.76837e-06 7.31533 0.447719 7.31533 1V6.48424L8.45721 6.4623C9.35725 6.445 9.82007 7.53268 9.18354 8.16922L5.88309 11.4697Z" fill="#EE304E"/>
-                    </svg>
+                    <div class="message message-up">
+                        <p class="message__text">Free</p>
+                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88309 11.4697C5.49256 11.8602 4.8594 11.8602 4.46887 11.4697L1.2929 8.29369C0.669463 7.67025 1.09928 6.60371 1.98079 6.58677L3.1975 6.56338V1C3.1975 0.44772 3.64522 4.76837e-06 4.1975 4.76837e-06H6.31533C6.86762 4.76837e-06 7.31533 0.447719 7.31533 1V6.48424L8.45721 6.4623C9.35725 6.445 9.82007 7.53268 9.18354 8.16922L5.88309 11.4697Z" fill="#EE304E"/>
+                        </svg>
+                    </div>
+                    <div class="message message-down">
+                        <p class="message__text">PRO</p>
+                        <svg width="10" height="12" viewBox="0 0 10 12" fill="04CD00" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88309 11.4697C5.49256 11.8602 4.8594 11.8602 4.46887 11.4697L1.2929 8.29369C0.669463 7.67025 1.09928 6.60371 1.98079 6.58677L3.1975 6.56338V1C3.1975 0.44772 3.64522 4.76837e-06 4.1975 4.76837e-06H6.31533C6.86762 4.76837e-06 7.31533 0.447719 7.31533 1V6.48424L8.45721 6.4623C9.35725 6.445 9.82007 7.53268 9.18354 8.16922L5.88309 11.4697Z" fill="#04CD00"/>
+                        </svg>
+                    </div>
                 </div>
-                <div class="message message-down">
-                    <p class="message__text">PRO</p>
-                    <svg width="10" height="12" viewBox="0 0 10 12" fill="04CD00" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88309 11.4697C5.49256 11.8602 4.8594 11.8602 4.46887 11.4697L1.2929 8.29369C0.669463 7.67025 1.09928 6.60371 1.98079 6.58677L3.1975 6.56338V1C3.1975 0.44772 3.64522 4.76837e-06 4.1975 4.76837e-06H6.31533C6.86762 4.76837e-06 7.31533 0.447719 7.31533 1V6.48424L8.45721 6.4623C9.35725 6.445 9.82007 7.53268 9.18354 8.16922L5.88309 11.4697Z" fill="#04CD00"/>
+                <div class="header-lines header-lines-big">
+                    <svg class="header-lines_up" width="414" height="76" viewBox="0 0 414 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="header-images__up" opacity="0.951181" d="M0 1.19849C0 1.19849 71.7171 -0.870109 117.26 9.27057C162.803 19.4112 180.059 31.5642 233.777 41.7049C294.563 50.7188 365.204 73.6702 414 73.6702" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
+                    <svg class="header-lines_down" width="414" height="179" viewBox="0 0 414 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="header-images__down" d="M0 2.21848C0 2.21848 106.214 1.09983 136.53 16.7609C166.845 32.4219 168.316 51.9795 210.694 66.7926C253.071 81.6058 269.006 122.778 307.983 144.033C333.397 157.891 340.742 151.814 367.013 164.414C381.033 171.139 397.526 176.727 419 176.727" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                    <div class="message message-up">
+                        <p class="message__text">Free</p>
+                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88309 11.4697C5.49256 11.8602 4.8594 11.8602 4.46887 11.4697L1.2929 8.29369C0.669463 7.67025 1.09928 6.60371 1.98079 6.58677L3.1975 6.56338V1C3.1975 0.44772 3.64522 4.76837e-06 4.1975 4.76837e-06H6.31533C6.86762 4.76837e-06 7.31533 0.447719 7.31533 1V6.48424L8.45721 6.4623C9.35725 6.445 9.82007 7.53268 9.18354 8.16922L5.88309 11.4697Z" fill="#EE304E"/>
+                        </svg>
+                    </div>
+                    <div class="message message-down">
+                        <p class="message__text">PRO</p>
+                        <svg width="10" height="12" viewBox="0 0 10 12" fill="04CD00" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88309 11.4697C5.49256 11.8602 4.8594 11.8602 4.46887 11.4697L1.2929 8.29369C0.669463 7.67025 1.09928 6.60371 1.98079 6.58677L3.1975 6.56338V1C3.1975 0.44772 3.64522 4.76837e-06 4.1975 4.76837e-06H6.31533C6.86762 4.76837e-06 7.31533 0.447719 7.31533 1V6.48424L8.45721 6.4623C9.35725 6.445 9.82007 7.53268 9.18354 8.16922L5.88309 11.4697Z" fill="#04CD00"/>
+                        </svg>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="services">
-        <div class="services-container">
-            <div class="services-prices">
-                <div class="services-price _active">
-                    <div class="save_80">Save 80%</div>
-                    <div class="save_90">Save 90%</div>
-                    <div class="services-price__title">
-                        1 <br/> month
-                    </div>
-                    <div class="services-price__date">
-                        $14.99 / <br/>month
-                    </div>
-                    <div class="services-price__month">
-                        month: $14.99
-                    </div>
-                    <div class="services-price__sale">Sale</div>
-                </div>
-                <div class="services-price _save-80">
-                    <div class="save_80">Save 80%</div>
-                    <div class="save_90">Save 90%</div>
-                    <div class="services-price__title">
-                        12 <br/> months
-                    </div>
-                    <div class="services-price__content">
+        </header>
+
+        <section class="services">
+            <div class="services-container">
+                <div class="services-prices">
+                    <div class="services-price _active">
+                        <div class="save_80">Save 80%</div>
+                        <div class="save_90">Save 90%</div>
+                        <div class="services-price__title">
+                            1 <br/> month
+                        </div>
                         <div class="services-price__date">
-                            $39.99 <br/> per year
+                            $14.99 / <br/>month
                         </div>
                         <div class="services-price__month">
-                            month: $3.33
+                            month: $14.99
                         </div>
+                        <div class="services-price__sale">Sale</div>
                     </div>
-                    <div class="services-price__sale">Sale</div>
+                    <div class="services-price _save-80">
+                        <div class="save_80">Save 80%</div>
+                        <div class="save_90">Save 90%</div>
+                        <div class="services-price__title">
+                            12 <br/> months
+                        </div>
+                        <div class="services-price__content">
+                            <div class="services-price__date">
+                                $39.99 <br/> per year
+                            </div>
+                            <div class="services-price__month">
+                                month: $3.33
+                            </div>
+                        </div>
+                        <div class="services-price__sale">Sale</div>
+                    </div>
+                    <div class="services-price _sale _save-90">
+                        <div class="save_80">Save 80%</div>
+                        <div class="save_90">Save 90%</div>
+                        <div class="services-price__title">
+                            3 <br/> months
+                        </div>
+                        <div class="services-price__date">
+                            $29.99 / <br/>3 month
+                        </div>
+                        <div class="services-price__month">
+                            month: $9.99
+                        </div>
+                        <div class="services-price__sale _sale">Sale</div>
+                    </div>
                 </div>
-                <div class="services-price _sale _save-90">
-                    <div class="save_80">Save 80%</div>
-                    <div class="save_90">Save 90%</div>
-                    <div class="services-price__title">
-                        3 <br/> months
+                <a href="https://www.google.com/search?q=1" class="services-btn">Continue</a>
+            </div>
+        </section>
+
+        <section class="slider">
+            <div class="slider-inner">
+                <div class="slider-track">
+                    <div class="slider-item">
+                        <div class="slider-item__header">
+                            <h3 class="slider-item__header-title">Fantastic! 1</h3>
+                            <div class="slider-item__header-person">lila_lane</div>
+                        </div>
+                        <div class="slider-item__rating">
+                            <img src="images/stars.svg" alt="stars">
+                        </div>
+                        <div class="slider-item__text">I can say I am <span></span> happy with this app. 15 pounds off in 30 days!</div>
                     </div>
-                    <div class="services-price__date">
-                        $29.99 / <br/>3 month
+                    <div class="slider-item">
+                        <div class="slider-item__header">
+                            <h3 class="slider-item__header-title">Fantastic! 2</h3>
+                            <div class="slider-item__header-person">lila_lane</div>
+                        </div>
+                        <div class="slider-item__rating">
+                            <img src="images/stars.svg" alt="stars">
+                        </div>
+                        <div class="slider-item__text">I can say I am <span></span> happy with this app. 15 pounds off in 30 days!</div>
                     </div>
-                    <div class="services-price__month">
-                        month: $9.99
+                    <div class="slider-item">
+                        <div class="slider-item__header">
+                            <h3 class="slider-item__header-title">Fantastic! 3</h3>
+                            <div class="slider-item__header-person">lila_lane</div>
+                        </div>
+                        <div class="slider-item__rating">
+                            <img src="images/stars.svg" alt="stars">
+                        </div>
+                        <div class="slider-item__text">I can say I am <span></span> happy with this app. 15 pounds off in 30 days!</div>
                     </div>
-                    <div class="services-price__sale _sale">Sale</div>
+                    <div class="slider-item">
+                        <div class="slider-item__header">
+                            <h3 class="slider-item__header-title">Fantastic! 4</h3>
+                            <div class="slider-item__header-person">lila_lane</div>
+                        </div>
+                        <div class="slider-item__rating">
+                            <img src="images/stars.svg" alt="stars">
+                        </div>
+                        <div class="slider-item__text">I can say I am <span></span> happy with this app. 15 pounds off in 30 days!</div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-item__header">
+                            <h3 class="slider-item__header-title">Fantastic! 5</h3>
+                            <div class="slider-item__header-person">lila_lane</div>
+                        </div>
+                        <div class="slider-item__rating">
+                            <img src="images/stars.svg" alt="stars">
+                        </div>
+                        <div class="slider-item__text">I can say I am <span></span> happy with this app. 15 pounds off in 30 days!</div>
+                    </div>
                 </div>
             </div>
-            <a href="https://www.google.com/search?q=1" class="services-btn">Continue</a>
-        </div>
-    </section>
-    <footer class="footer">
-        Recurring billing. Cancel anytime.
-    </footer>
-</div>
-<script src="script.js"></script>
+        </section>
+
+        <footer class="footer">
+            Recurring billing. Cancel anytime.
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
